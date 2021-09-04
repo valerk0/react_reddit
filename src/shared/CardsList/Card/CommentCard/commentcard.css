@@ -1,0 +1,53 @@
+.commentCard {
+  padding: 15px;
+  border: 1px solid var(--greyF3);
+  border-radius: 3px;
+}
+
+.btnList {
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--black);
+}
+
+.btnListItem:not(:last-child) {
+  margin-right: 27px;
+}
+
+.btnListItem img {
+  margin-right: 5px;
+  transform: translateY(3px);
+}
+
+.metaData {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.publishedLabel {
+  display: none;
+}
+
+.createdAt, .createdAt span {
+  padding-left: 10px;
+  color: var(--grey99);
+}
+
+@media all and (min-width: 1024px) {
+
+  .metaData {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .publishedLabel {
+    display: inline;
+  }
+}

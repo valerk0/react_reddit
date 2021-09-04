@@ -1,0 +1,56 @@
+.sortBlock {
+  background-color: var(--white);
+  padding: 11px 20px;
+  border-radius: 7px;
+  margin: 0 0 20px;
+}
+
+.menuButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.dropDownBtn {
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* .dropDownBtn:hover {
+  background-color: rgba(51, 51, 51, 0.1);
+} */
+
+.btnText {
+  padding: 5px;
+  font-size: 20px;
+  line-height: 23px;
+  color: #CC6633;
+  transform: translateY(-2px);
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  z-index: 10;
+  padding: 0 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  background-color: var(--white);
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: var(--greyEC);
+}
+
+@media all and (min-width: 1024px) {
+
+  .sortBlock {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+}
